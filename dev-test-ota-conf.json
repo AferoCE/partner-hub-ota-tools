@@ -1,0 +1,20 @@
+{   
+    "Comments"    : "Configuration file for partner Full OTA image upload tool", 
+
+    "description" : "Test only - DONT USE for OTA",
+    "version"     : "1.0",
+    "url"         : "dummy",
+
+    "username"    : "tina@kiban.io",
+    "userpw"      : "put your actual pw here",
+    "auth-string" : "NGY3ZGU0ODQtY2YyMy00NzhkLTkwYTctNDEyMTA0ZDUxMjBiOjcxYTllODU5NDYxYjQ2ZjBhNTFhOTE3OWM0ZmE4OTRk",
+
+    "name"         : "Potenco-test",
+    "deviceTypeId": "a6542896-8464-48e1-b12f-664a57e4e703",
+    "partnerId"   : "4f7de484-cf23-478d-90a7-412104d5120b",
+
+
+    "imageFiles"   : {
+        "a": "hub_update.bin"
+    }
+}

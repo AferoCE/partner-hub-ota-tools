@@ -194,7 +194,7 @@ def uploadOTAImage(responseBody, slot):
                 "Authorization": "Bearer {}".format(access_token)}
     response = requests.post(url,
                              headers=headers,
-                             files = {"file": open(filename, 'rb')},
+                             data = open(filename, 'rb'),
                              timeout=None)
 
     if response.status_code != 200:
@@ -227,8 +227,7 @@ def uploadOTAImage(responseBody, slot):
     responseJson = json.loads(response.text)
 
     # Update the OTA record with the new URL.
-    # Depending on the OTA strategy: slot 'a' means first partition. 
-    # and url2 referring to the 2nd partition (or 'b') 
+    # slot 'a' is a convenient way to specify the image.
     if (slot == "a"):
         responseBody["url"] = responseJson['value']
     else:
